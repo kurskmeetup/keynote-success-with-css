@@ -30,6 +30,36 @@
 		</div>
 	</section>
 
+	<section class="slide">
+		<div>
+			<h2>Из <a href="http://sass-lang.com/guide#6">документации к SASS</a></h2>
+			<pre>
+				<code>@mixin border-radius($radius) {</code>
+				<code>  -webkit-border-radius: $radius;</code>
+				<code>     -moz-border-radius: $radius;</code>
+				<code>      -ms-border-radius: $radius;</code>
+				<code>       -o-border-radius: $radius;</code>
+				<code>          border-radius: $radius;</code>
+				<code>}</code>
+			</pre>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Ох</h2>
+			<pre>
+				<code>@mixin border-radius($radius) {</code>
+				<code>  -webkit-border-radius: $radius; // Safari 4.0 (2008 год)</code>
+				<code>     -moz-border-radius: $radius; // Firefox 3.6 (2010 год)</code>
+				<code>      -ms-border-radius: $radius; // не существовал</code>
+				<code>       -o-border-radius: $radius; // не существовал</code>
+				<code>          border-radius: $radius;</code>
+				<code>}</code>
+			</pre>
+		</div>
+	</section>
+
 	<section class="slide"><div>
 		<h2>Shower Key Features</h2>
 		<ol>
