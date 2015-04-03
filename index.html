@@ -108,7 +108,7 @@
 				<li>возьмет данные с caniuse.com</li>
 				<li>расставит <em>нужные</em> префиксы</li>
 				<li>уберет ненужные</li>
-				<li>gradient, flexbox, <code>:fullscreen</code>, <code>@keyframes</code>, <code>background-size</code></li>
+				<li>gradient, flexbox, <code>:fullscreen</code>, <code>@keyframes</code>, <code>background-size</code>, <code>transform</code></li>
 			</ul>
 		</div>
 	</section>
@@ -144,6 +144,42 @@
 		<div>
 			<p>Нет уверенности, что изменения в стилях не сломают что-то еще.</p>
 			<p>Люди <em>боятся</em> вносить изменения, потому что не могут предсказать последствия.</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<pre>
+				<code>.attachments {</code>
+				<code>  margin: 1em 0;</code>
+				<code>}</code>
+
+				<span class="next"><code>// Override margin of attachment class,</code>
+				<code>// so it doesn't mess up page layout.</code>
+				<code>body.attachments {</code>
+				<code>  margin-top: 0;</code>
+				<code>}</code></span>
+			</pre>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<pre>
+				<code>@media (min-width: 1440px) {</code>
+				<code>  .projects {</code>
+				<code>    ul.tests {</code>
+				<code>      li.test .contents {</code>
+				<code>        .inner_contents {</code>
+				<code>          .description_container {</code>
+				<code>            width: 50%!important;</code>
+				<code>          }</code>
+				<code>        }</code>
+				<code>      }</code>
+				<code>    }</code>
+				<code>  }</code>
+				<code>}</code>
+			</pre>
 		</div>
 	</section>
 
