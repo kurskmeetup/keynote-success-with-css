@@ -134,6 +134,67 @@
 
   <section class="slide">
     <div>
+      <h3>БЭМ</h3>
+      <pre style="font-size: 40px"><code>.block{__element[--modifier]}
+      </code></pre>
+
+      <h3>Для пацанов</h3>
+      <pre style="font-size: 40px"><code>.block{-element[--modifier]}
+      </code></pre>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <pre>
+        <code>.article__title {}</code>
+        <code>.widget__title {}</code>
+        <code>.article__title--outstanding {}</code>
+        <code>.article--new {}</code>
+      </pre>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Каскад, каскад</h2>
+      <p>— Начинаем с ресета. У блоков нет внешних зависимостей</p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Плоские классы и модификаторы</h2>
+      <pre><del>
+        <code>li.test .contents {</code>
+        <code>  .inner_contents {</code>
+        <code>    .description_container {</code>
+        <code>      width: 50%!important;</code>
+      </del></pre>
+
+      <pre>
+        <code><mark>.test__description--tiny</mark> { width: 50% }</code>
+      </pre>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Точно не пересекутся</h2>
+      <pre>
+        <code>.article__title {}</code>
+        <code>.widget__title {}</code>
+      </pre>
+    </div>
+  </section>
+
+  <section class="slide" style="background: url(pictures/success.jpg) center center no-repeat;">
+    <div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
       <h2>Методологии</h2>
       <ul>
         <li><a href="http://ru.bem.info/method/">БЭМ</a>, Блок-Элемент-Модификатор от Яндекса</li>
@@ -148,13 +209,8 @@
 
   <section class="slide shout">
     <div><h2>CSS — тоже код, и требует любви</h2></div>
-  </section -->
+  </section>
 
-  <!--
-    To hide progress bar from entire presentation
-    just remove “progress” element.
-    -->
-  <div class="progress"><div></div></div>
   <script src="shower/shower.min.js"></script>
   <!-- Copyright © 2014 Yours Truly, Famous Inc. -->
   <!-- Photos by John Carey, fiftyfootshadows.net -->
