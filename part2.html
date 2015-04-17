@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Как пользоваться успехом у женщин с помощью CSS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=792, user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="shower/themes/bright/styles/screen.css">
+</head>
+<body class="list">
+  <header class="caption">
+    <h1>Успех и CSS</h1>
+    <p><a href="https://github.com/vast">Василий Половнёв</a>, <a href="http:/flatstack.com">Flatstack</a></p>
+  </header>
+
+  <section class="slide" id="Cover"><div>
+    <h2>Успех и CSS</h2>
+    <p>Как пользоваться успехом у женщин с помощью CSS</p>
+    <p class="note">Василий Половнёв, Flatstack</p>
+  </div></section>
+
+  <section class="slide cover">
+    <div>
+      <p>&nbsp;</p>
+      <ul>
+        <li><del>Autoprefixer</del></li>
+        <li>Методологии</li>
+      </ul>
+      <img src="pictures/another-lucky-boy.jpg" alt="" width="100%">
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Проблемы CSS</h2>
+      <ul>
+        <li>вертикальное центрирование</li>
+        <li>колонки одинаковой высоты</li>
+        <li>верстка для IE6</li>
+        <li>хаки</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide shout">
+    <div><h2>Настоящая проблема — <em>страх</em></h2></div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <p>Нет уверенности, что изменения в стилях не сломают что-то еще.</p>
+      <p>Люди <em>боятся</em> вносить изменения, потому что не могут предсказать последствия.</p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Каскад, каскад</h2>
+      <pre>
+        <code>ul {</code>
+        <code>  padding: 1em 0 1em 1.5em;</code>
+        <code>}</code>
+      </pre>
+
+      <pre class="next">
+        <code>.nav ul { padding: 0 }</code>
+        <code>.footer .contacts ul { padding: 0 }</code>
+        <code>.oh-please-stop-it { padding: 0 }</code>
+      </pre>
+    </div>
+  </section>
+
+  <section class="slide" style="background: url(pictures/css-window.gif) center center no-repeat;">
+    <div></div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <pre>
+        <code>.projects {</code>
+        <code>  ul.tests {</code>
+        <code>    li.test .contents {</code>
+        <code>      .inner_contents {</code>
+        <code>        .description_container {</code>
+        <code>          width: 50%!important;</code>
+        <code>        }</code>
+        <code>      }</code>
+        <code>    }</code>
+        <code>  }</code>
+        <code>}</code>
+      </pre>
+    </div>
+  </section>
+
+  <section class="slide" style="background: url(pictures/oh-god-why.jpg) center center no-repeat;">
+    <div></div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <pre>
+        <code>.article .title { color: $so-cool-blue; }</code>
+        <code>.widget .title { color: $wow-so-red; }</code>
+      </pre>
+
+      <pre>
+        <code>&lt;article class="article"&gt;</code>
+        <code>  &lt;h2 class="title"&gt;Hurr Durr&lt;/h2&gt;</code>
+        <code></code>
+        <code>  &lt;div class="widget"&gt;</code>
+        <code>    &lt;h2 class="title"&gt;Imma sheep&lt;/h2&gt;</code>
+        <code>  &lt;/div&gt;</code>
+        <code>&lt;/article&gt;</code>
+      </pre>
+    </div>
+  </section>
+
+  <section class="slide" style="background: url(pictures/xfiles.jpg) center center no-repeat;">
+    <div></div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <p>
+        CSS — не только средство визуального дизайна, это код.
+      </p>
+      <p>
+        CSS с хорошей архитектурой предсказуем,
+        его легко поддерживать, масштабировать и использовать повторно.
+        А писать такой CSS помогают методологии, своды правил и рекомендаций.
+      </p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Методологии</h2>
+      <ul>
+        <li><a href="http://ru.bem.info/method/">БЭМ</a>, Блок-Элемент-Модификатор от Яндекса</li>
+        <li><a href="http://mvcss.io/">MVCSS</a>, Modular View CSS от Envy, CodeSchool</li>
+        <li><a href="http://smacss.com/">SMACSS</a>, Scalable and Modular Architecture for CSS</li>
+        <li><a href="http://operatino.github.io/MCSS/en/">MCSS</a>, Multilayer CSS от Одноклассников</li>
+        <li><a href="http://oocss.org/">OOCSS</a>, Object-Oriented CSS</li>
+        <li><a href="http://nano.sapegin.ru/all/opor-methodology">OPOR</a>, микро-методология Артема Сапегина</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide shout">
+    <div><h2>CSS — тоже код, и требует любви</h2></div>
+  </section -->
+
+  <!--
+    To hide progress bar from entire presentation
+    just remove “progress” element.
+    -->
+  <div class="progress"><div></div></div>
+  <script src="shower/shower.min.js"></script>
+  <!-- Copyright © 2014 Yours Truly, Famous Inc. -->
+  <!-- Photos by John Carey, fiftyfootshadows.net -->
+</body>
+</html>
